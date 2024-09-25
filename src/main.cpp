@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
-const int red = 5;
-const int green = 18;
+const int red = 6;
+const int green = 17;
 const int blue = 19;
 
 void setup() {
@@ -15,7 +15,7 @@ void loop() {
   static unsigned long lastChange = 0;
   unsigned long currentTime = millis();
   
-  if (currentTime - lastChange > 80000) {
+  if (currentTime - lastChange > 10000) {
     Serial.print("Changing color to index: "); // Log color index change
     static int colorIndex = 0;
     Serial.println(colorIndex);
