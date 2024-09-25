@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-const int red = 6;
+const int red = 5;
 const int green = 18;
 const int blue = 19;
 
